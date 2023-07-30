@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #121212;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: #3940ab;
+  transition: all 0.4s;
+}
+
+.sidebarOpen {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 100%;
+  background: #3940ab;
+  transition: all 0.4s;
+  width: 240px;
+}
+
+.sidebarInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+}
+
+.sidebarHeader {
+  display: flex;
+  align-items: center;
+  height: 68px;
+  padding: 0 1.25rem 0 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 3px solid transparent;
+  transition: all 0.4s;
+}
+
+.sidebarHeader:hover {
+  border-left: 3px solid #bdbdbd;
+}
+
+.sidebarBurguer {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+}
+
+.sidebarMenu {
+  display: grid;
+}
+
+.sidebarMenu > button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  height: 55px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 22px;
+  border-left: 3px solid transparent;
+  transition: all 0.4s;
+}
+
+.sidebarMenu > button:hover {
+  border-left: 3px solid #f9f9f9;
+}
+
+.hasBorder {
+  padding-bottom: 10rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
+}
+
+.sidebarMenu > button > span {
+  color: #f9f9f9;
+  opacity: 0;
+  transition: all 0.4s;
+  font-size: 15px;
+}
+
+.sidebarMenu > button > .onShowSidebar {
+  opacity: 1;
+  transition: all 0.4s;
+}

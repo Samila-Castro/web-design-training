@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  background-color: #12131c;
+}
+
+footer {
+  padding-block: 5rem;
+  background-color: #151823;
+  color: #666873;
+}
+
+.footerContainer {
+  max-width: 116rem;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+.footerTop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+}
+
+.footerTitle {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.footerList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footerListItem {
+  list-style: none;
+}
+
+.footerListLink {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s;
+}
+
+.footerListLink:hover {
+  color: #fff;
+}
+
+.footerDivide {
+  margin-block: 2.5rem;
+  border: none;
+  border-top: 1px solid rgba(252, 255, 255, 0.1);
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footerBottom .footerList {
+  flex-direction: row;
+}
+
+.copyright {
+  display: flex;
+  gap: 0.8rem;
+}
